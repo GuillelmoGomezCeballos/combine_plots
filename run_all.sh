@@ -9,3 +9,7 @@ root -l -q -b /home/submit/ceballos/cms/MitAnalysisRunIII/rdf/makePlots/convert_
 root -l -q -b /home/submit/ceballos/cms/MitAnalysisRunIII/rdf/makePlots/convert_histograms.C'("/home/submit/ceballos/cards/combine_plots/mytest_bin2.root","combinedMy/mll","ww_output_bin2.root")'
 root -l -q -b /home/submit/ceballos/cms/MitAnalysisRunIII/rdf/makePlots/convert_histograms.C'("/home/submit/ceballos/cards/combine_plots/mytest_bin3.root","combinedMy/mll","ww_output_bin3.root")'
 root -l -q -b /home/submit/ceballos/cms/MitAnalysisRunIII/rdf/makePlots/convert_histograms.C'("/home/submit/ceballos/cards/combine_plots/mytest_bin4.root","combinedMy/mll","ww_output_bin4.root")'
+
+root -l -q -b /home/submit/ceballos/cms/MitAnalysisRunIII/rdf/makePlots/convert_njets_to_crs.C 
+
+root -l -q -b /home/submit/ceballos/cms/MitAnalysisRunIII/rdf/makePlots/makeAllPlots.C+'("combine",0,20221)'
