@@ -1,0 +1,4 @@
+*.root
+log_*
+*_combined.py
+datacard_*
