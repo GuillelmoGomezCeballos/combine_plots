@@ -53,4 +53,20 @@ for bin in 1 2 3 4; do
     -o workspace_ww_incl_bin${bin}.root;
 done
 
+elif [ $1 = 2 ]; then
+
+ANA="wwAnalysis1001"
+
+combineCards.py -S \
+datacard_${ANA}_20221_bin?_alt.txt \
+> datacard_${ANA}_2022_alt.text
+
+text2workspace.py -P HiggsAnalysis.CombinedLimit.PhysicsModel:multiSignalModel \
+  --PO verbose \
+  --PO 'map=.*/Signal0:r_s0[1,0,3]' \
+  --PO 'map=.*/Signal1:r_s0[1,0,3]' \
+  --PO 'map=.*/Signal2:r_s0[1,0,3]' \
+  datacard_${ANA}_2022_alt.text \
+  -o workspace_ww_incl_alt.root;
+
 fi

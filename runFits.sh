@@ -19,4 +19,8 @@ elif [ $1 = 1 ]; then
 
 nohup ~/ana_area/Combination/comb/runFit.sh . ww_incl mlf obs >& log_mlf_ww_incl_obs &
 
+elif [ $1 = 2 ]; then
+
+echo "nothing to do";
+
 fi

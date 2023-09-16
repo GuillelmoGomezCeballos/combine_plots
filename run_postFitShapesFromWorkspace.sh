@@ -29,4 +29,14 @@ PostFitShapesFromWorkspace \
 -f fitDiagnosticsww_incl_obs.root:fit_s \
 --total-shapes
 
+elif [ $1 = 2 ]; then
+
+PostFitShapesFromWorkspace \
+-w workspace_ww_incl_alt.root \
+-d datacard_wwAnalysis1001_2022_alt.text \
+--output output_histograms_alt.root \
+--postfit --sampling \
+-f fitDiagnosticsww_incl_obs.root:fit_s \
+--total-shapes
+
 fi
